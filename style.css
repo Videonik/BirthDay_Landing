@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+  /* -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+   user-select: none;   */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+html{
+    overflow-y: scroll;
+    font-family: "Neucha", cursive;
+}
+
+.wrapper {
+
+}
+
+.header {
+  height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+  background-size: cover;
+}
+
+.ibg {
+  position: relative;
+}
+
+.ibg > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.header__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(1px);
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.header__row {
+  padding: 32px 0px;
+}
+
+.header__navigation {
+}
+
+.header__navigation__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navigation__block > li {
+  transition: all ease 0.1s;
+}
+
+.header__navigation__block > li:hover {
+  transform: scale(1.01);
+}
+
+.header__navigation__link {
+  color: white;
+  font-size: 32px;
+}
+
+.header__title{
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header__images{
+
+}
+
+.header__anim__image__right{
+    position: absolute;
+   right: 0;
+    top: 0;
+}
+
+.header__anim__image__left{
+    position: absolute;
+    left: 0;
+     top: 0;
+}
+
+.address{
+
+    background: url('./src/wallpapers_7695-3848441182.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.address__row{
+    padding: 70px 0px;
+}
+
+.address__images__block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.address__image{
+    max-width: 300px;
+    border-radius:91% 9% 92% 8% / 7% 92% 8% 93%;
+}
+
+.address__description{
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 32px;
+    
+}
+
+.custom-shape-divider-bottom-1720612015 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1720612015 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 53px;
+    
+}
+
+.custom-shape-divider-bottom-1720612015 .shape-fill {
+    fill: #014ca9;
+}
+
+.custom-shape-divider-top-1720612076 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1720612076 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 53px;
+    transform: rotateY(180deg);
+
+}
+
+.custom-shape-divider-top-1720612076 .shape-fill {
+    fill: #014ca9;
+}
+
+.rules {
+    background: url('./src/bikini.png') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 70px 0px;
+    color: red;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.rules__row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wishlist{
+    background-color: #f39ae0;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.wishlist__row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 0px;
+}
+
+
+.wishlist__image {
+    max-width: 300px;
+}
+
+.dresscode {
+    padding-top: 70px;
+    background: url('./src/bgclo.png');
+}
+.container {
+}
+.dresscode__row {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.dresscode__text {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+   
+}
+
+.dresscode__image{
+    max-width: 300px;
+    filter: drop-shadow(2px 2px 0 white)
+        drop-shadow(-2px 2px 0 white)
+        drop-shadow(2px -2px 0 white)
+        drop-shadow(-2px -2px 0 white);
+}
+
+.playlist {
+    padding: 70px 0px;
+}
+
+.playlist__row {
+}
+.playlist__title {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.contacts {
+    padding: 70px 0px;
+    background: url('./src/bgtgg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 910px;
+}
+
+.contacts__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.contacts__title {
+}
+.contacts__link > img{
+    max-width: 300px;
+}
